@@ -33,8 +33,8 @@ export default function prepareUrlPage(req, resolvedUrl) {
 
   // const env = process.env.NODE_ENV; //development, production
 
-  let destinationPage = { title: "weekly", ...pages.weekly };
-  let destinationSlug = { ...pages.weekly.home };
+  let destinationPage = { title: "doc", ...pages.doc };
+  let destinationSlug = { ...pages.doc.home };
 
   for (let index = 0; index < pageKeys.length; index++) {
     //бүх page Key-ээр гүйнэ.
