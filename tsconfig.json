@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext",
+    // "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@lib/*": ["lib/*"],
+      "@util/*": ["util/*"],
+      "@config/*": ["config/*"],
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@service": ["service/*"],
+      "@config": ["config/*"],
+      "@cloud/*": ["components/cloud/*"],
+      "@atom/*": ["components/common/Atom/*"],
+      "@constants/*": ["middleware/constants/*"],
+      "@middleware/*": ["middleware/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx,"
+, "pages/old_index.tsxold", "pages/old_app.tsxold"  ],
+  "exclude": ["node_modules"],
+  "noImplicitAny": true,
+  "suppressImplicitAnyIndexErrors": true,
+  "strictNullChecks": false,
+  "strictPropertyInitialization": false,
+  "allowSyntheticDefaultImports": true
+}
