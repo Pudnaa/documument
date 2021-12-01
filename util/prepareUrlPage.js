@@ -15,7 +15,7 @@ export default function prepareUrlPage(req, resolvedUrl) {
   const tempPath = _.split(url.pathname, "/", 3); //http://localhost:3000/cloudddd/cloud/weekly гэсэн байвал эхний cloudddd гэдэг үгийг авна.
 
   let defaultPage = "weekly";
-  if (url.hostname == "doc.veritech.mn") {
+  if (url.hostname == "knowledge-orcin.vercel.app") {
     defaultPage = "doc";
   }
 
